@@ -1,61 +1,13 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #fff;
-}
-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 0;
-}
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-nav a.whatsapp img {
-  width: 28px;
-}
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  max-height: 400px;
-}
-.carousel-image {
-  width: 100%;
-  display: none;
-}
-.gallery {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-.frame {
-  width: 250px;
-  text-align: center;
-}
-.frame img {
-  width: 100%;
-}
-.buy-button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #34af23;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #fff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; }
+.logo { font-weight: bold; font-size: 24px; }
+.menu a { margin-left: 20px; text-decoration: none; color: black; }
+.whatsapp::before { content: '📱'; margin-right: 5px; color: #25D366; }
+.carousel { display: flex; overflow: hidden; height: 400px; position: relative; }
+.carousel img { width: 100%; display: none; object-fit: cover; }
+.carousel img.active { display: block; }
+.gallery { display: flex; justify-content: space-around; padding: 20px; }
+.product { text-align: center; }
+.product img { width: 300px; height: auto; }
+.btn { display: inline-block; padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
